@@ -1,4 +1,4 @@
-package model;
+package model.user;
 
 import net.bytebuddy.implementation.bind.annotation.RuntimeType;
 import org.junit.jupiter.api.Assertions;

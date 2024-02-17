@@ -1,4 +1,4 @@
-package model;
+package model.user;
 
 /*Déclaration des mise à jour
 History:

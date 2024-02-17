@@ -1,4 +1,4 @@
-package model.User;
+package model;
 
 /*Déclaration des mise à jour
 History:

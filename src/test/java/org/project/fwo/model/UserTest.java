@@ -8,7 +8,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.mockito.Mockito;
 
-public class PersonnageTest {
+class PersonnageTest {
     private User user = Mockito.mock(
             User.class,
             Mockito.CALLS_REAL_METHODS);
@@ -21,7 +21,8 @@ public class PersonnageTest {
     }
 
 
-    public void testInit(){
+    @Test
+    void testInit(){
         Assertions.assertEquals("admin", perso.getUsername());
         Assertions.assertEquals("admin@gmail.com", perso.getEmail());
         Assertions.assertEquals("admin", perso.getPassword());
@@ -71,7 +72,7 @@ public class PersonnageTest {
     }*/
 
     @Test
-    public void testSetterGetter(){
+    void testSetterGetter(){
         perso.setUserame("MerlinPinpin");
         perso.setEmail("merlin@gmail.com");
         perso.setPassword("Merlin");

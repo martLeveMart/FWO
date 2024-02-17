@@ -1,20 +1,20 @@
-package model.user;
+package org.project.fwo.model.user;
 
-import net.bytebuddy.implementation.bind.annotation.RuntimeType;
+//import net.bytebuddy.implementation.bind.annotation.RuntimeType;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvSource;
+//import org.junit.jupiter.params.ParameterizedTest;
+//import org.junit.jupiter.params.provider.CsvSource;
 import org.mockito.Mockito;
 
-class PersonnageTest {
-    private User user = Mockito.mock(
+class UserTest {
+    private final User user = Mockito.mock(
             User.class,
             Mockito.CALLS_REAL_METHODS);
 
     @BeforeEach
-    private void setup(){
+    public void setup(){
         user.setUsername("admin");
         user.setEmail("admin@gmail.com");
         user.setPassword("admin");
@@ -23,9 +23,9 @@ class PersonnageTest {
 
     @Test
     void testInit(){
-        Assertions.assertEquals("admin", perso.getUsername());
-        Assertions.assertEquals("admin@gmail.com", perso.getEmail());
-        Assertions.assertEquals("admin", perso.getPassword());
+        Assertions.assertEquals("admin", user.getUsername());
+        Assertions.assertEquals("admin@gmail.com", user.getEmail());
+        Assertions.assertEquals("admin", user.getPassword());
     }
 
     /*@ParameterizedTest
@@ -73,12 +73,12 @@ class PersonnageTest {
 
     @Test
     void testSetterGetter(){
-        perso.setUserame("MerlinPinpin");
-        perso.setEmail("merlin@gmail.com");
-        perso.setPassword("Merlin");
+        user.setUsername("MerlinPinpin");
+        user.setEmail("merlin@gmail.com");
+        user.setPassword("Merlin");
 
-        Assertions.assertEquals("MerlinPinpin", perso.getUsername());
-        Assertions.assertEquals("merlin@gmail.com", perso.getEmail());
-        Assertions.assertEquals("Merlin", perso.getPassword());
+        Assertions.assertEquals("MerlinPinpin", user.getUsername());
+        Assertions.assertEquals("merlin@gmail.com", user.getEmail());
+        Assertions.assertEquals("Merlin", user.getPassword());
     }
 }

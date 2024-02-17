@@ -1,4 +1,4 @@
-package model.user;
+package org.project.fwo.model.user;
 
 /*Déclaration des mise à jour
 History:

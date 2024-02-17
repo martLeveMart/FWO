@@ -29,22 +29,6 @@ public class PersonnageTest {
 
     /*@ParameterizedTest
     @CsvSource({
-            "50, 50",
-            "150, 0",
-            "-20, 100"
-    })
-    public void testTakeDmg(int dmg, int life){
-
-        //When
-        perso.takeDmg(dmg);
-
-        //Then
-        Assertions.assertEquals(life, perso.getLife());
-
-    }*/
-
-    /*@ParameterizedTest
-    @CsvSource({
             "40, 90",
             "150, 100",
             "-20, 50"

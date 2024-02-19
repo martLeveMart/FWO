@@ -1,4 +1,4 @@
-package model.user;
+package org.project.fwo.model.user;
 
 /*Déclaration des mise à jour
 History:
@@ -14,6 +14,11 @@ public class User {
     protected String email;
     protected String password;
 
+    public void presentation() {
+        System.out.println("Username:" + username);
+        System.out.println("Email:" + email);
+        System.out.println("Password:" + password);
+    }
 
     /*
     Déclaration des contructeurs
